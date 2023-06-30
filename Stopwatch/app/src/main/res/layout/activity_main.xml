@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="52sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+    />
+
+    <TextView
+        android:id="@+id/hourGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_toRightOf="@+id/hour"
+        android:textSize="52sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="2dp"
+    />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@+id/hourGem"
+        android:textSize="52sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="2dp"
+    />
+
+    <TextView
+        android:id="@+id/minGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_toRightOf="@+id/min"
+        android:textSize="52sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="2dp"
+    />
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@id/minGem"
+        android:textSize="52sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="2dp"
+    />
+
+    <TextView
+        android:id="@+id/secGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:layout_toRightOf="@+id/sec"
+        android:textSize="52sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/milliSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@id/secGem"
+        android:textSize="52sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="2dp"
+        />
+
+<!--    Lap Timer   -->
+
+    <TextView
+        android:id="@+id/lapHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/lapHourGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_toRightOf="@+id/lapHour"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@+id/lapHourGem"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapMinGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_toRightOf="@+id/lapMin"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@id/lapMinGem"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapSecGem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:layout_toRightOf="@+id/lapSec"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapMilliSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_toRightOf="@id/lapSecGem"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lapLabel"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:text="Laps Counter"
+        android:textAlignment="center"
+        android:layout_below="@id/min"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+    />
+
+    <TextView
+        android:id="@+id/lap1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:hint="Lap 1"
+        android:textAlignment="center"
+        android:layout_below="@id/lapLabel"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+    />
+
+    <TextView
+        android:id="@+id/smallLap1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="Lap 1"
+        android:textAlignment="center"
+        android:layout_below="@id/lap1"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/lap2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:hint="Lap 2"
+        android:textAlignment="center"
+        android:layout_below="@id/smallLap1"
+        android:layout_marginLeft="40dp"
+    />
+
+    <TextView
+        android:id="@+id/smallLap2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="Lap 2"
+        android:textAlignment="center"
+        android:layout_below="@id/lap2"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/lap3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:hint="Lap 3"
+        android:textAlignment="center"
+        android:layout_below="@id/smallLap2"
+        android:layout_marginLeft="40dp"
+    />
+
+    <TextView
+        android:id="@+id/smallLap3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="Lap 3"
+        android:textAlignment="center"
+        android:layout_below="@id/lap3"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Start"
+        android:onClick="startThread"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="550dp"
+    />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Stop"
+        android:onClick="stopThread"
+        android:layout_toRightOf="@+id/start"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="550dp"
+    />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Reset"
+        android:onClick="reset"
+        android:layout_toRightOf="@id/stop"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="550dp"
+    />
+
+    <Button
+        android:id="@+id/lap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop"
+        android:text="Add Lap"
+        android:onClick="startLapThread"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+    />
+
+    <Button
+        android:id="@+id/resetLap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop"
+        android:layout_toRightOf="@id/lap"
+        android:text="Reset Lap"
+        android:onClick="resetLap"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+    />
+
+
+</RelativeLayout>
